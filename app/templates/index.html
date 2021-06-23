@@ -1,0 +1,32 @@
+{% extends 'base.html' %} {%block content%}
+<div class="container">
+    <div class="col-md-8">
+        <div>
+            <h2 style="font-size: 80px; font-family: 'Lobster', cursive;  padding-top: 40px; text-align: center; color:rgb(192, 86, 104);">
+                Welcome to Papilo Blogs Website</h2>
+            <br><br>
+
+            <p class="text-center">{{blogQuote.quote}}</p>
+
+            <p class="text-center" ><b>~ {{blogQuote.author}} ~</b> </p>
+
+            
+                <a href="{{url_for( 'main.subscriber',uname=current_user.username)}} " style="text-decoration: none;">  <button class="btn btn-danger">JOIN US</button> </a>
+          
+
+        </div>
+    </div>
+    <div class="col-md-2"></div>
+</div>
+<style>
+    body{
+        background-image: url('../static/beautynaz.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .container{
+        margin-top: 300px;
+        margin-left: 400px;
+    }
+</style>
+{%endblock%}
