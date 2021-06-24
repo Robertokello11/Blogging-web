@@ -30,17 +30,17 @@
 
 
                 <li>
-                    <a href="{{url_for( 'main.profile',uname=current_user.username)}} " style="text-decoration: none; "> PROFILE</a>
+                     <a href="{{url_for( 'main.profile',uname=current_user.username)}} " style="text-decoration: none; "> PROFILE</a>
                 </li>
                 <li>
-                    <a href="{{url_for( 'auth.logout')}} " style="text-decoration: none; ">SIGN OUT</a>
+                     <a href="{{url_for( 'auth.logout')}} " style="text-decoration: none; ">SIGN OUT</a>
                 </li>
 
                 </li>
                 {% else %}
 
                 <li>
-                    <a href="{{url_for( 'auth.login')}} " style="text-decoration: none; ">LOGIN</a>
+                     <a href="{{url_for( 'auth.login')}} " style="text-decoration: none; ">LOGIN</a>
                 </li>
 
             </ul>
